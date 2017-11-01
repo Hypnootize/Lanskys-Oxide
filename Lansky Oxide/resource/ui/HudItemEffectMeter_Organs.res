@@ -1,16 +1,16 @@
-"Resource/UI/HudItemEffectMeter_Sniper.res"
+"Resource/UI/HudItemEffectMeter_Scout.res"
 {
 	HudItemEffectMeter
 	{
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"	"c90"	[$WIN32]
-		"ypos"	"r138"	[$WIN32]
-
-
-		"wide"			"120"
-		"tall"			"54"
+		"xpos"			"r115"	[$WIN32]
+		"ypos"			"r44"	[$WIN32]
+		"xpos"			"r194"	[$X360]
+		"ypos"			"r74"	[$X360]
+		"wide"			"100"
+		"tall"			"50"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}
@@ -25,7 +25,6 @@
 		"wide"			"76"
 		"tall"			"44"
 		"visible"		"0"
-		"visible_minmode"	"0"
 		"enabled"		"1"
 		"image"			"../hud/misc_ammo_area_blue"
 		"scaleImage"	"1"	
@@ -39,9 +38,9 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
-		"xpos"			"75"
-		"ypos"			"13"
-		"zpos"					"2"
+		"xpos"					"45"
+		"ypos"					"12"
+		"zpos"					"0"
 		"wide"					"41"
 		"tall"					"15"
 		"autoResize"			"1"
@@ -53,7 +52,7 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"TFFontSmall"
+		"font"					"TFFontSmall"//"HudFontSmallest"
 	}
 
 	"ItemEffectMeter"
@@ -61,10 +60,10 @@
 		"ControlName"			"ContinuousProgressBar"
 		"fieldName"				"ItemEffectMeter"
 		"font"					"Default"
-		"ypos"			"0"
-		"xpos"			"0"
+		"xpos"					"0"
+		"ypos"					"0"
 		"zpos"					"2"
-		"wide"			"50"
+		"wide"					"50"
 		"tall"					"6"				
 		"autoResize"			"0"
 		"pinCorner"				"0"
@@ -79,10 +78,10 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"			"64"
-		"ypos"			"13"
+		"xpos"					"20"
+		"ypos"					"11"
 		"zpos"					"2"
-		"wide"					"20"
+		"wide"					"40"
 		"tall"					"20"	
 		"pinCorner"				"2"
 		"visible"				"1"
@@ -92,28 +91,6 @@
 		"textAlignment"			"north"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"HudFontMedium"
-		"font_minmode"				"HudFontSmall"
-	}
-	"ItemEffectMeterCountShadow"
-	{
-		"ControlName"			"CExLabel"
-		"fieldName"				"ItemEffectMeterCountShadow"
-		"xpos"			"65"
-		"ypos"			"13"
-		"zpos"					"1"
-		"wide"					"20"
-		"tall"					"20"	
-		"pinCorner"				"2"
-		"visible"				"1"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"labelText"				"%progresscount%"
-		"textAlignment"			"north"
-		"dulltext"				"0"
-		"brighttext"			"0"
-		"font"					"HudFontMedium"
-		"font_minmode"				"HudFontSmall"
-		"fgcolor"				"black"
+		"font"					"HudFontMediumSmall"
 	}
 }
