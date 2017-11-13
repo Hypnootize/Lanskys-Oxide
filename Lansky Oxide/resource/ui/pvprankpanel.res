@@ -191,6 +191,7 @@
 			"ypos"			"cs-0.5"
 			"tall"			"35"
 			"wide"			"505"
+			"border"		"MainMenuBGBorder"
 		}
 
 		"NameLabel"
@@ -205,7 +206,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"font"			"HudFontSmallBold"
-			"fgcolor_override"	"143 134 131 255"
+			"fgcolor_override"	"255 255 255 255"
 			"textAlignment"	"north-west"
 			"labelText"		"%name%"
 			"proportionaltoparent"	"1"
@@ -213,6 +214,8 @@
 			if_mini
 			{
 				"visible"	"0"
+				"font"			"HudFontSmallishBold"
+				"fgcolor_override"	"TanLight"
 			}
 		}
 
@@ -228,7 +231,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"font"			"HudFontSmallBold"
-			"fgcolor_override"	"143 134 131 255"
+			"fgcolor_override"	"255 255 255 255"
 			"textAlignment"	"north-west"
 			"labelText"		"%level%"
 			"proportionaltoparent"	"1"
@@ -237,6 +240,8 @@
 			{
 				"xpos"	"67"
 				"ypos"	"4"
+				"font"			"HudFontSmallestBold"
+				"fgcolor_override"	"TanLight"
 			}
 		}
 
@@ -281,10 +286,15 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"ItemFontAttribSmall"
-					"fgcolor_override"	"143 134 131 255"
+					"fgcolor_override"	"255 255 255 255"
 					"textAlignment"	"south-west"
 					"labelText"		"%current_xp%"
 					"proportionaltoparent"	"1"
+					
+					if_mini
+					{
+						"fgcolor_override"	"TanLight"
+					}
 				}
 
 				"NextLevelXPLabel"
@@ -299,10 +309,15 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"ItemFontAttribSmall"
-					"fgcolor_override"	"143 134 131 255"
+					"fgcolor_override"	"255 255 255 255"
 					"textAlignment"	"south-east"
 					"labelText"		"%next_level_xp%"
 					"proportionaltoparent"	"1"
+					
+					if_mini
+					{
+						"fgcolor_override"	"TanLight"
+					}
 				}
 
 				"ProgressBarsContainer"
