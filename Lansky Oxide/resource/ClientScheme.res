@@ -7122,7 +7122,7 @@ Scheme
 		}	
 		"10"
 		{
-			"font" "resource/HelveticaLTStd-Roman.ttf"
+			"font" "resource/HelveticaLTStd-Roman.otf"
 			"name" "helvetica roman"
 		}	
 		"11"
